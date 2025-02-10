@@ -14,7 +14,7 @@ export default {
         "custom-blue": "#0B3E9F"
       },
       fontFamily: {
-        'fredoka': ['"Fredoka One"', 'monospace'],
+        'fredoka': ['Fredoka', 'monospace'],
       },
       fontSize: {
         '95': '95px',
