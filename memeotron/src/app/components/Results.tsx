@@ -59,6 +59,7 @@ export default function Results({ result, uploadedImage }: ResultsProps) {
               <Image
                 src={result.filePath}
                 alt="Matched meme image"
+                priority
                 fill
                 className="object-cover"
               />
