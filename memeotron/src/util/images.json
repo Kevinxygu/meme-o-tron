@@ -1,0 +1,822 @@
+[
+  {
+    "imageName": "Angry Mr. Krabs",
+    "filePath": "/images/mrKrabsAngry.jpg",
+    "tags": ["angry", "cartoon", "SpongeBob", "rage", "furious"],
+    "expression": ["rage", "furrowed brows", "teeth grinding"],
+    "distinctFeatures": ["big red eyes", "angry mustache", "scrunched face"],
+    "distinctBody": ["red crab", "blue shirt"],
+    "matchingWeight": {
+      "tags": 0.8,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.7
+    }
+  },
+  {
+    "imageName": "Avatar Stare",
+    "filePath": "/images/avatarStare.jpg",
+    "tags": ["Avatar", "weird", "low-budget", "cosplay", "funny"],
+    "expression": ["confused", "staring", "mildly unsettling"],
+    "distinctFeatures": ["blue skin", "yellow eyes", "bald head"],
+    "distinctBody": ["human Na’vi hybrid", "weird lighting"],
+    "matchingWeight": {
+      "tags": 0.85,
+      "expression": 0.75,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Kurt Angle",
+    "filePath": "/images/kurtAngle.jpg",
+    "tags": ["smug", "bald", "creepy", "funny", "beard"],
+    "expression": ["smirk", "raised eyebrows", "wide eyes"],
+    "distinctFeatures": ["wrinkled forehead", "piercing stare", "thick beard"],
+    "distinctBody": ["bald head", "white t-shirt"],
+    "matchingWeight": {
+      "tags": 0.75,
+      "expression": 0.85,
+      "distinctFeatures": 0.8,
+      "distinctBody": 0.7
+    }
+  },
+  {
+    "imageName": "Bernie Sanders",
+    "filePath": "/images/bernieMittens.jpg",
+    "tags": ["Bernie Sanders", "cold", "inauguration", "meme", "sitting"],
+    "expression": ["neutral", "grumpy", "unbothered"],
+    "distinctFeatures": ["glasses", "white hair", "mask"],
+    "distinctBody": ["big mittens", "folded arms", "sitting on chair"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.8,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.9
+    }
+  },
+  {
+    "imageName": "Bing Chilling",
+    "filePath": "/images/bingChilling.jpg",
+    "tags": ["John Cena", "ice cream", "funny", "confused"],
+    "expression": ["mildly concerned", "forced smile", "staring"],
+    "distinctFeatures": [
+      "chiseled jawline",
+      "slicked-back hair",
+      "big forehead"
+    ],
+    "distinctBody": ["suit and tie", "holding ice cream"],
+    "matchingWeight": {
+      "tags": 0.8,
+      "expression": 0.75,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Blue Lobster",
+    "filePath": "/images/blueLobster.jpg",
+    "tags": ["lobster", "blue", "rare", "ocean", "weird"],
+    "expression": ["deadpan", "neutral"],
+    "distinctFeatures": ["blue shell", "long antennae", "big claws"],
+    "distinctBody": ["crustacean form", "sharp claws"],
+    "matchingWeight": {
+      "tags": 0.85,
+      "expression": 0.6,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.95
+    }
+  },
+  {
+    "imageName": "Zoolander",
+    "filePath": "/images/zoolander.jpg",
+    "tags": ["Zoolander", "model", "pose", "blue steel", "serious"],
+    "expression": ["pursed lips", "furrowed brows", "intense stare"],
+    "distinctFeatures": ["chiseled jaw", "raised eyebrows", "slicked hair"],
+    "distinctBody": ["stylish outfit", "fashionable pose"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Broccoli",
+    "filePath": "/images/broccoli.jpg",
+    "tags": ["vegetable", "healthy", "green", "food", "plant"],
+    "expression": ["neutral"],
+    "distinctFeatures": ["bushy top", "thick stem", "dark green color"],
+    "distinctBody": ["tree-like form", "stem"],
+    "matchingWeight": {
+      "tags": 0.85,
+      "expression": 0.2,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.95
+    }
+  },
+  {
+    "imageName": "Chill Guy",
+    "filePath": "/images/chillGuy.jpg",
+    "tags": ["cartoon", "bear", "chill", "casual"],
+    "expression": ["smug", "relaxed", "confident"],
+    "distinctFeatures": ["round nose", "small ears", "eyebrows on point"],
+    "distinctBody": ["jeans", "sweater", "standing", "hands in pockets"],
+    "matchingWeight": {
+      "tags": 0.8,
+      "expression": 0.85,
+      "distinctFeatures": 0.8,
+      "distinctBody": 0.9
+    }
+  },
+  {
+    "imageName": "Big Chungus",
+    "filePath": "/images/bigChungus.jpg",
+    "tags": ["Bugs Bunny", "fat", "meme", "funny", "cartoon"],
+    "expression": ["smug", "grinning", "satisfied"],
+    "distinctFeatures": ["chubby cheeks", "tall ears", "big belly"],
+    "distinctBody": ["chunky frame", "grey fur"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.95,
+      "distinctBody": 0.95
+    }
+  },
+  {
+    "imageName": "Gentleman Frog",
+    "filePath": "/images/gentlemanFrog.jpg",
+    "tags": ["frog", "fancy", "classy", "painting", "sophisticated"],
+    "expression": ["stoic", "refined", "unimpressed"],
+    "distinctFeatures": ["frog head", "Victorian outfit", "suit"],
+    "distinctBody": ["frog hands", "fancy vest", "chair"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.85,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Sad Cat",
+    "filePath": "/images/cryingCatThumbsUp.jpg",
+    "tags": ["cat", "crying", "thumbs up", "wholesome", "meme"],
+    "expression": ["sad", "teary-eyed", "supportive"],
+    "distinctFeatures": ["big wet eyes", "blurred pixels", "thumb gesture"],
+    "distinctBody": ["cat head", "paw showing thumbs up"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.7
+    }
+  },
+  {
+    "imageName": "Doge",
+    "filePath": "/images/doge.jpg",
+    "tags": ["dog", "Shiba Inu", "wow", "meme", "funny"],
+    "expression": ["skeptical", "amused", "judging"],
+    "distinctFeatures": ["Shiba Inu fur", "side glance", "cute"],
+    "distinctBody": ["dog paws", "couch background"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "surprisedElmo",
+    "filePath": "/images/surprisedElmo.jpg",
+    "tags": ["Elmo", "Sesame Street", "shocked", "meme", "funny"],
+    "expression": ["surprised", "blank stare", "wide-eyed"],
+    "distinctFeatures": ["red fur", "orange nose", "googly eyes"],
+    "distinctBody": ["puppet form", "fluffy texture"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "Oh Yeah, It's All Coming Together Guy",
+    "filePath": "/images/kronkSmug.jpg",
+    "tags": ["Kronk", "Emperor’s New Groove", "smug", "funny", "cartoon"],
+    "expression": ["smug", "satisfied", "knowing look"],
+    "distinctFeatures": ["thick eyebrows", "side glance", "sharp jawline"],
+    "distinctBody": ["animated style", "dark background"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.7
+    }
+  },
+  {
+    "imageName": "Gigachad",
+    "filePath": "/images/gigaChad.jpg",
+    "tags": ["Chad", "alpha male", "meme", "masculine", "black and white"],
+    "expression": ["smug", "confident", "powerful"],
+    "distinctFeatures": ["chiseled jawline", "thick beard", "slicked hair"],
+    "distinctBody": ["muscular build", "bare shoulders"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.95,
+      "distinctBody": 0.9
+    }
+  },
+  {
+    "imageName": "Handsome Squidward",
+    "filePath": "/images/handsomeSquidward.jpg",
+    "tags": ["Squidward", "handsome", "cartoon", "funny", "exaggerated"],
+    "expression": ["smug", "vain", "proud"],
+    "distinctFeatures": ["chiseled jaw", "blue skin", "sultry lips"],
+    "distinctBody": ["Squidward head", "animated style"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.95,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Iridocyclitis",
+    "filePath": "/images/spellingBeeKid.jpg",
+    "tags": ["kid", "glasses", "awkward", "funny", "meme"],
+    "expression": ["nervous", "focused", "awkward"],
+    "distinctFeatures": ["big glasses", "short hair", "striped tie"],
+    "distinctBody": ["blue shirt", "microphone"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.85,
+      "distinctFeatures": 0.8,
+      "distinctBody": 0.7
+    }
+  },
+  {
+    "imageName": "Confused Jackie Chan",
+    "filePath": "/images/confusedJackieChan.jpg",
+    "tags": ["Jackie Chan", "confused", "mind blown", "meme", "funny"],
+    "expression": ["frustrated", "confused", "overwhelmed"],
+    "distinctFeatures": ["black hair", "raised eyebrows", "open mouth"],
+    "distinctBody": ["gesturing hands", "gray jacket"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Violated Jerry",
+    "filePath": "/images/jerryLookingRough.jpg",
+    "tags": ["Jerry", "Tom and Jerry", "tired", "meme", "funny"],
+    "expression": ["dazed", "exhausted", "confused"],
+    "distinctFeatures": ["droopy eyes", "slouched posture", "whiskers"],
+    "distinctBody": ["small mouse", "cartoon style"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Kirby with a Knife",
+    "filePath": "/images/kirbyKnife.jpg",
+    "tags": ["Kirby", "knife", "threatening", "cute but deadly", "meme"],
+    "expression": ["smiling", "menacing", "innocent yet dangerous"],
+    "distinctFeatures": ["pink round body", "red feet", "plush texture"],
+    "distinctBody": ["small arms", "knife held upright"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.9
+    }
+  },
+  {
+    "imageName": "Leo",
+    "filePath": "/images/laughingLeo.jpg",
+    "tags": ["Leonardo DiCaprio", "laughing", "drinking", "mocking", "meme"],
+    "expression": ["smug", "amused", "mocking laughter"],
+    "distinctFeatures": ["beard", "slicked-back hair", "fancy suit"],
+    "distinctBody": ["holding a drink", "lavish background"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Dafoe Looking Up",
+    "filePath": "/images/cryingDafoe.jpg",
+    "tags": ["Willem Dafoe", "crying", "despair", "blue lighting", "meme"],
+    "expression": ["distressed", "tearful", "hopeless"],
+    "distinctFeatures": ["wrinkled forehead", "beard", "glistening eyes"],
+    "distinctBody": ["blue background", "looking up dramatically"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "Mike Wazowski",
+    "filePath": "/images/mikeSulleySwap.jpg",
+    "tags": ["Mike Wazowski", "Sulley", "face swap", "cursed", "meme"],
+    "expression": ["blank stare", "emotionless", "disturbing"],
+    "distinctFeatures": ["green round body", "human-like face", "tiny limbs"],
+    "distinctBody": ["small arms", "legs slightly apart"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.85,
+      "distinctFeatures": 0.95,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Minion",
+    "filePath": "/images/creepyMinion.jpg",
+    "tags": ["Minion", "dark", "eerie", "forest", "meme"],
+    "expression": ["blank stare", "creepy", "lost"],
+    "distinctFeatures": ["yellow body", "goggles", "blue overalls"],
+    "distinctBody": ["tiny arms", "standing in dark forest"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.85,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.9
+    }
+  },
+  {
+    "imageName": "No Bitches?",
+    "filePath": "/images/sadMegamind.jpg",
+    "tags": ["Megamind", "sad", "big head", "meme", "cartoon"],
+    "expression": ["melancholic", "puppy eyes", "disappointed"],
+    "distinctFeatures": ["blue skin", "huge forehead", "pointy eyebrows"],
+    "distinctBody": ["cartoonish style", "leaning forward"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Soyjak",
+    "filePath": "/images/npcWojak.jpg",
+    "tags": ["NPC", "Wojak", "gray man", "emotionless", "meme"],
+    "expression": ["neutral", "blank", "robotic"],
+    "distinctFeatures": ["gray face", "simple black eyes", "no emotion"],
+    "distinctBody": ["minimalist design", "thin neck"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.7
+    }
+  },
+  {
+    "imageName": "Hide the Pain Harold",
+    "filePath": "/images/hideThePainHarold.jpg",
+    "tags": ["Harold", "smiling through pain", "stock photo", "meme"],
+    "expression": ["forced smile", "dead inside", "uncomfortable"],
+    "distinctFeatures": ["wrinkled face", "white beard", "tired eyes"],
+    "distinctBody": ["holding coffee mug", "using laptop"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Disappointed Cricket Fan",
+    "filePath": "/images/disappointedCricketFan.jpg",
+    "tags": ["cricket", "disappointed", "arms crossed", "frustrated", "meme"],
+    "expression": ["annoyed", "displeased", "dead serious"],
+    "distinctFeatures": ["bald head", "mustache", "glasses"],
+    "distinctBody": ["plaid shirt", "puffy vest", "hands on hips"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Patrick's Morning Hair",
+    "filePath": "/images/patrickHaircut.jpg",
+    "tags": ["Patrick Star", "bad haircut", "funny", "cartoon", "meme"],
+    "expression": ["dazed", "clueless", "confused"],
+    "distinctFeatures": ["pink starfish body", "messy pink hair", "wide eyes"],
+    "distinctBody": ["shirtless", "green and purple shorts"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.9,
+      "distinctFeatures": 0.95,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "POGGERS",
+    "filePath": "/images/pogPepe.jpg",
+    "tags": ["Pepe", "pog", "excited", "frog", "meme"],
+    "expression": ["excited", "hyped", "surprised"],
+    "distinctFeatures": ["big eyes", "wide-open mouth", "green skin"],
+    "distinctBody": ["floating head", "cartoonish style"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Pou",
+    "filePath": "/images/staringSnailPlush.jpg",
+    "tags": ["snail", "plush", "staring", "judging", "meme"],
+    "expression": ["blank", "emotionless", "judging"],
+    "distinctFeatures": [
+      "oversized black eyes",
+      "tiny mouth",
+      "round plush body"
+    ],
+    "distinctBody": ["soft plush texture", "tan color"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Pringles Man",
+    "filePath": "/images/pringlesMan.jpg",
+    "tags": ["Pringles", "logo", "mustache", "brand", "meme"],
+    "expression": ["smug", "corporate happiness"],
+    "distinctFeatures": ["huge mustache", "floating head", "round eyes"],
+    "distinctBody": ["cartoonish face", "bow tie"],
+    "matchingWeight": {
+      "tags": 0.85,
+      "expression": 0.8,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "Robot Stare",
+    "filePath": "/images/iRobotStaring.jpg",
+    "tags": ["robot", "AI", "staring", "uncanny valley", "meme"],
+    "expression": ["neutral", "lifeless", "curious"],
+    "distinctFeatures": ["pale face", "metallic joints", "robotic stare"],
+    "distinctBody": ["mechanical limbs", "artificial design"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.85,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.9
+    }
+  },
+  {
+    "imageName": "Roll Safe",
+    "filePath": "/images/rollSafeThinking.jpg",
+    "tags": ["thinking", "smart", "pointing to head", "meme"],
+    "expression": ["smirking", "knowing", "confident"],
+    "distinctFeatures": ["short haircut", "gold watch", "pointing gesture"],
+    "distinctBody": ["black leather jacket", "urban background"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Sad Hamster",
+    "filePath": "/images/staringHamster.jpg",
+    "tags": ["hamster", "staring", "blurry", "meme"],
+    "expression": ["blank", "surprised", "slightly terrified"],
+    "distinctFeatures": [
+      "big round black eyes",
+      "small face",
+      "blurry quality"
+    ],
+    "distinctBody": ["fluffy fur", "tiny body"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.85,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "Shocked Black Guy",
+    "filePath": "/images/shockedManHandsOnHead.jpg",
+    "tags": ["shocked", "surprised", "wide-eyed", "meme"],
+    "expression": ["astonished", "jaw dropped", "shocked"],
+    "distinctFeatures": ["huge eyes", "raised eyebrows", "open mouth"],
+    "distinctBody": ["hands on head", "white t-shirt"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Surprised Pikachu",
+    "filePath": "/images/surprisedPikachu.jpg",
+    "tags": ["Pikachu", "surprised", "shocked", "Pokemon", "meme"],
+    "expression": ["shocked", "confused", "wide-eyed"],
+    "distinctFeatures": ["yellow fur", "round red cheeks", "open mouth"],
+    "distinctBody": ["cartoonish style", "blurry background"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Side Eye Shrek",
+    "filePath": "/images/sideEyeShrek.jpg",
+    "tags": ["Shrek", "side-eye", "suspicious", "ogre", "meme"],
+    "expression": ["skeptical", "judging", "unimpressed"],
+    "distinctFeatures": ["green skin", "thick eyebrows", "tilted head"],
+    "distinctBody": ["brown vest", "forest background"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Shrek Rizz",
+    "filePath": "/images/smugShrek.jpg",
+    "tags": ["Shrek", "smug", "flirty", "ogre", "meme"],
+    "expression": ["smirking", "mischievous", "sly"],
+    "distinctFeatures": ["raised eyebrows", "side glance", "half-smile"],
+    "distinctBody": ["brown vest", "warm lighting"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Side Eyeing Chloe",
+    "filePath": "/images/chloeConfused.jpg",
+    "tags": ["Chloe", "confused", "disgusted", "kid", "meme"],
+    "expression": ["disturbed", "side-eye", "uncertain"],
+    "distinctFeatures": [
+      "raised eyebrows",
+      "slightly open mouth",
+      "blonde hair"
+    ],
+    "distinctBody": ["purple shirt", "car seat"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.7
+    }
+  },
+  {
+    "imageName": "Horse Starting At Wall",
+    "filePath": "/images/horseStaringWall.jpg",
+    "tags": ["horse", "staring", "deep thoughts", "meme"],
+    "expression": ["blank", "lost in thought", "deadpan"],
+    "distinctFeatures": [
+      "horse eye close-up",
+      "wall perspective",
+      "dramatic lighting"
+    ],
+    "distinctBody": ["brown fur", "long snout"],
+    "matchingWeight": {
+      "tags": 0.85,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "Skog",
+    "filePath": "/images/fatBearPlush.jpg",
+    "tags": ["bear", "plush", "chubby", "soft", "meme"],
+    "expression": ["neutral", "calm", "content"],
+    "distinctFeatures": ["round face", "tiny eyes", "extra fluffy"],
+    "distinctBody": ["overstuffed belly", "short legs"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.7,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.95
+    }
+  },
+  {
+    "imageName": "Cool Spongebob",
+    "filePath": "/images/handsomeSpongeBob.jpg",
+    "tags": ["SpongeBob", "handsome", "weird flex", "meme"],
+    "expression": ["smug", "confident", "intense stare"],
+    "distinctFeatures": [
+      "big blue eyes",
+      "chiseled jawline",
+      "overly detailed face"
+    ],
+    "distinctBody": ["muscular upper body", "blue shorts"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Spongebob with His Jellyfishing Glasses On",
+    "filePath": "/images/nerdySpongeBob.jpg",
+    "tags": ["SpongeBob", "nerd", "glasses", "meme"],
+    "expression": ["focused", "dorky", "curious"],
+    "distinctFeatures": ["huge glasses", "buck teeth", "wide smile"],
+    "distinctBody": ["white shirt", "red tie"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.85,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Player 001 (Season 1)",
+    "filePath": "/images/squidGameOldMan.jpg",
+    "tags": ["Squid Game", "old man", "sad", "alone", "meme"],
+    "expression": ["tired", "hopeless", "lost in thought"],
+    "distinctFeatures": ["wrinkled face", "grey hair", "weak posture"],
+    "distinctBody": ["green tracksuit", "sitting alone"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Stonks",
+    "filePath": "/images/stonksMeme.jpg",
+    "tags": ["stonks", "business", "money", "success", "meme"],
+    "expression": ["smug", "overconfident", "proud"],
+    "distinctFeatures": ["bald head", "mannequin face", "weirdly human-like"],
+    "distinctBody": ["business suit", "stock market background"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.9
+    }
+  },
+  {
+    "imageName": "This Is Fine",
+    "filePath": "/images/thisIsFineDog.jpg",
+    "tags": ["this is fine", "fire", "dog", "chaos", "meme"],
+    "expression": ["calm", "unbothered", "resigned"],
+    "distinctFeatures": ["cartoon dog", "small hat", "big eyes"],
+    "distinctBody": ["sitting in fire", "coffee cup on table"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Troll Face",
+    "filePath": "/images/trollFace.jpg",
+    "tags": ["troll", "laughing", "black and white", "rage comics", "meme"],
+    "expression": ["smug", "mischievous", "trolling"],
+    "distinctFeatures": ["wide grin", "squinted eyes", "curved mouth"],
+    "distinctBody": ["floating head", "simple black-and-white drawing"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "Trump",
+    "filePath": "/images/mugshotGlare.jpg",
+    "tags": ["mugshot", "serious", "intense stare", "meme"],
+    "expression": ["angry", "stern", "menacing"],
+    "distinctFeatures": [
+      "furrowed brows",
+      "piercing stare",
+      "slicked-back hair"
+    ],
+    "distinctBody": ["suit and tie", "official mugshot background"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.85
+    }
+  },
+  {
+    "imageName": "Tyler the Creator",
+    "filePath": "/images/tylerMugshot.jpg",
+    "tags": ["Tyler the Creator", "mugshot", "serious", "deadpan", "meme"],
+    "expression": ["blank stare", "unbothered", "neutral"],
+    "distinctFeatures": ["short hair", "piercing stare", "dark background"],
+    "distinctBody": ["jail jumpsuit", "mugshot composition"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "You're Getting Paid?",
+    "filePath": "/images/urGettingPaidKid.jpg",
+    "tags": ["kid", "shocked", "surprised", "meme", "getting paid"],
+    "expression": ["confused", "bewildered", "concerned"],
+    "distinctFeatures": ["raised eyebrows", "mouth slightly open", "big eyes"],
+    "distinctBody": ["kid’s face", "school background"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "Winnie the Pooh",
+    "filePath": "/images/poohSquinting.jpg",
+    "tags": ["Winnie the Pooh", "squinting", "meme", "doubt"],
+    "expression": ["skeptical", "suspicious", "squinting"],
+    "distinctFeatures": ["Pooh’s round face", "half-closed eyes", "orange fur"],
+    "distinctBody": ["red shirt", "lazy posture"],
+    "matchingWeight": {
+      "tags": 0.9,
+      "expression": 0.95,
+      "distinctFeatures": 0.85,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "Yao Ming",
+    "filePath": "/images/yaoMingLaughing.jpg",
+    "tags": ["Yao Ming", "laughing", "black-and-white", "rage comics", "meme"],
+    "expression": ["hysterical laughter", "unbothered", "mocking"],
+    "distinctFeatures": [
+      "exaggerated smile",
+      "squinting eyes",
+      "cartoonish drawing"
+    ],
+    "distinctBody": ["floating head", "simple black-and-white illustration"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.75
+    }
+  },
+  {
+    "imageName": "War Torn PTSD",
+    "filePath": "/images/warTornPTSD.jpg",
+    "tags": ["PTSD", "thousand-yard stare", "trauma", "meme"],
+    "expression": ["blank", "haunted", "lost in thought"],
+    "distinctFeatures": [
+      "glassy eyes",
+      "bags under eyes",
+      "expressionless face"
+    ],
+    "distinctBody": ["war-themed background", "dark lighting"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.95,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  },
+  {
+    "imageName": "The Rock Vine Boom",
+    "filePath": "/images/rockEyebrowBoom.jpg",
+    "tags": ["The Rock", "eyebrow raise", "vine boom", "meme"],
+    "expression": ["suspicious", "amused", "raised eyebrow"],
+    "distinctFeatures": ["one eyebrow raised", "serious stare", "bald head"],
+    "distinctBody": ["black shirt", "muscular build"],
+    "matchingWeight": {
+      "tags": 0.95,
+      "expression": 0.9,
+      "distinctFeatures": 0.9,
+      "distinctBody": 0.8
+    }
+  }
+]
