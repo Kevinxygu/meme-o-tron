@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Meme } from "../util/types";
 
-const sampleImage = "/alison.jpg";
+const sampleImage = "/ryan2.jpg";
 
 export default function Home() {
   const [result, setResult] = useState<Meme | null>(null);
