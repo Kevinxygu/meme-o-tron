@@ -6,7 +6,10 @@ interface ImageInputProps {
 
 const ImageInput: React.FC<ImageInputProps> = ({ onImageChange }) => {
   return (
-    <label className="inline-block px-8 py-6 bg-blue-500 text-white font-semibold rounded-[10px] shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-light focus:ring-opacity-75 transition duration-300 ease-in-out cursor-pointer">
+    <label
+      className="inline-block px-10 py-4 bg-custom-blue text-white font-semibold rounded-[20px] shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-light focus:ring-opacity-75 transition duration-300 ease-in-out cursor-pointer font-fredoka text-xl
+"
+    >
       Upload Image
       <input
         type="file"
