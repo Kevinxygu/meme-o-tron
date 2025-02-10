@@ -44,12 +44,11 @@ export default function Results({ result, uploadedImage }: ResultsProps) {
           <div className="relative w-64 h-64 border-8 border-custom-blue transition-colors hover:border-blue-700 rounded-md overflow-hidden">
             {!revealed && (
               <button
-
                 onClick={() => {
                   play();
                   setRevealed(true);
                 }}
-  className="absolute inset-0 bg-custom-blue text-white text-lg font-medium 
+                className="absolute inset-0 bg-custom-blue text-white text-lg font-medium 
              flex items-center justify-center hover:bg-blue-700 border hover:border-blue-700 border-custom-blue 
              transition-colors"
               >
@@ -70,12 +69,14 @@ export default function Results({ result, uploadedImage }: ResultsProps) {
 
       {/* "Go again" Button */}
       <div className="mt-8">
-        <button
-          onClick={() => window.location.reload()}
-          className="text-black hover:text-blue-700 transition-colors"
-        >
-          Go again
-        </button>
+        {revealed && (
+          <button
+            onClick={() => window.location.reload()}
+            className="inline-block px-10 py-4 bg-custom-blue text-white font-semibold rounded-[20px] shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-light focus:ring-opacity-75 transition duration-300 ease-in-out cursor-pointer font-fredoka text-xl"
+          >
+            Go again
+          </button>
+        )}
       </div>
     </div>
   );
