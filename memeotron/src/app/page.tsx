@@ -1,16 +1,25 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import ImageInput from "./components/ImageInput";      
+import Landing from "./components/Landing";
+import Loading from "./components/Loading"
 import { Meme } from "../util/types";
 
 const sampleImage = "/ryan2.jpg";
 
 export default function Home() {
   const [result, setResult] = useState<Meme | null>(null);
+  const [image, setImage] = useState<File | null>(null);
+    
 
-  const callMatchApi = async () => {
+  const callMatchApi = async (e: React.ChangeEvent<HTMLInputElement>) => {
     try {
       const formData = new FormData();
+      
+      if (e.target.files && e.target.files.length > 0) {
+        setImage(e.target.files[0]);
+      }
 
       const imageResponse = await fetch(sampleImage);
       const imageBlob = await imageResponse.blob();
@@ -35,46 +44,8 @@ export default function Home() {
   };
 
   return (
-    <div className="grid grid-rows-[20px_auto_1fr] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>meme-o-tron</h1>
-      <button
-        onClick={callMatchApi}
-        className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-      >
-        Reveal
-      </button>
-      <div>
-        <h2>
-          You look like...{" "}
-          <span className="font-bold text-2xl">
-            {result?.imageName && result.imageName + "!!!!!!!"}
-          </span>
-        </h2>
-        <div className="flex gap-8 items-center justify-center w-full">
-          {/* Sample Image */}
-          <div className="w-[300px] h-[300px] relative">
-            <Image
-              src={sampleImage}
-              alt="sample"
-              fill
-              className="object-contain"
-            />
-          </div>
-          {/* Result Image or Placeholder */}
-          <div className="w-[300px] h-[300px] relative">
-            {result?.filePath ? (
-              <Image
-                src={result.filePath}
-                alt="result"
-                fill
-                className="object-contain"
-              />
-            ) : (
-              <div className="w-full h-full bg-gray-900 rounded-lg" />
-            )}
-          </div>
-        </div>
-      </div>
+    <div>
+      <Landing />
     </div>
   );
 }

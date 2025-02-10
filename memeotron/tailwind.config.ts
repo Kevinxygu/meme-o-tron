@@ -11,7 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "custom-blue": "#0B3E9F"
       },
+      fontFamily: {
+        'fredoka': ['Fredoka', 'monospace'],
+      },
+      fontSize: {
+        '95': '95px',
+      }
     },
   },
   plugins: [],
