@@ -1,9 +1,10 @@
+// app/page.tsx
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import Landing from "./components/Landing";
 import Loading from "./components/Loading";
+import Results from "./components/Results"; // <-- Import the new Results component
 import { Meme } from "@/util/types";
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
       setPage("results");
     } catch (error) {
       console.error("Error matching image:", error);
-      // Optionally handle errors (maybe setPage back to "landing"?)
+      // Optionally handle errors (e.g., setPage("landing") to go back?)
       setPage("landing");
     }
   };
@@ -43,47 +44,14 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
       {/* LANDING PAGE */}
-      {page === "landing" && (
-        <Landing onImageChange={callMatchApi} />
-      )}
+      {page === "landing" && <Landing onImageChange={callMatchApi} />}
 
       {/* LOADING PAGE */}
-      {page === "loading" && (
-        <Loading />
-      )}
+      {page === "loading" && <Loading />}
 
       {/* RESULTS PAGE */}
       {page === "results" && result && (
-        <div className="container mx-auto px-4 py-8">
-          <div className="max-w-2xl mx-auto">
-            {/* If you also want to display the uploaded image: */}
-            {image && (
-              <div className="mt-6">
-                <div className="relative w-full h-64">
-                  <Image
-                    src={URL.createObjectURL(image)}
-                    alt="Uploaded image"
-                    fill
-                    className="object-contain rounded-lg"
-                  />
-                </div>
-              </div>
-            )}
-
-            {/* Show the match result */}
-            <div className="mt-6 p-4 bg-white rounded-lg shadow">
-              <h2 className="text-xl font-semibold">Result:</h2>
-              <div className="relative w-full h-64 mt-4">
-                <Image
-                  src={result.filePath}
-                  alt="Result image"
-                  fill
-                  className="object-contain rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Results result={result} uploadedImage={image} />
       )}
     </main>
   );
