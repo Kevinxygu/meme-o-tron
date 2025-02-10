@@ -9,7 +9,7 @@ export default function Loading() {
       className="pt-12 items-center justify-items-center min-h-screen p-5 pb-10 font-[family-name:var(--font-geist-sans)]"
       style={{ backgroundImage: "url('/assets/mii_loading_gif.gif')", backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <h1 className="font-fredoka text-custom-blue text-95">Loading<span className="dot1">.</span><span className="dot2">.</span><span className="dot3">.</span></h1>
+      <h1 className="font-fredoka text-custom-blue text-95">loading<span className="dot1">.</span><span className="dot2">.</span><span className="dot3">.</span></h1>
       <style jsx>{`
         @keyframes blink {
           0%, 20% { opacity: 0; }
