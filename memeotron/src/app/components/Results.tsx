@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Meme } from "@/util/types";
+import useSound from "use-sound";
 
 interface ResultsProps {
   result: Meme;
@@ -11,9 +12,10 @@ interface ResultsProps {
 
 export default function Results({ result, uploadedImage }: ResultsProps) {
   const [revealed, setRevealed] = useState(false);
+  const [play] = useSound("/assets/sounds/vine_boom.mp3");
 
   // Conditionally show the meme name
-  const displayedName = revealed ? (result.imageName || "some meme") : "???";
+  const displayedName = revealed ? result.imageName || "some meme" : "???";
 
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen py-8 px-4 bg-white">
@@ -24,8 +26,6 @@ export default function Results({ result, uploadedImage }: ResultsProps) {
 
       {/* Side-by-side images */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-4xl mx-auto">
-        
-        {/* Uploaded image (left) */}
         {uploadedImage && (
           <div className="flex flex-col items-center">
             <div className="relative w-64 h-64 border-8 border-custom-blue rounded-md overflow-hidden">
@@ -44,13 +44,17 @@ export default function Results({ result, uploadedImage }: ResultsProps) {
           <div className="relative w-64 h-64 border-8 border-custom-blue transition-colors hover:border-blue-700 rounded-md overflow-hidden">
             {!revealed && (
               <button
-  onClick={() => setRevealed(true)}
+
+                onClick={() => {
+                  play();
+                  setRevealed(true);
+                }}
   className="absolute inset-0 bg-custom-blue text-white text-lg font-medium 
              flex items-center justify-center hover:bg-blue-700 border hover:border-blue-700 border-custom-blue 
              transition-colors"
->
-  <p className="text-3xl">Reveal</p>
-</button>
+              >
+                Reveal
+              </button>
             )}
             {revealed && (
               <Image
