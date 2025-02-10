@@ -13,11 +13,6 @@ export default function Home() {
 
   const callMatchApi = async (file: File) => {
     setImage(file);
-
-<<<<<<< Updated upstream
-  const callMatchApi = async (e: React.ChangeEvent<HTMLInputElement>) => {
-=======
->>>>>>> Stashed changes
     try {
       const formData = new FormData();
       formData.append("image", file, "image.jpg");
